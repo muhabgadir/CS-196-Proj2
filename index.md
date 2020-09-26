@@ -10,13 +10,13 @@ For this project, we are intended to understand the information that is embedded
 
 ### 1.1 Finite Difference Operator
 
-Given in the project's specs, we utlize humble difference operators to manipulate the cameraman picture. These operators take in pixel value in relation to a previous pixel. 
+Given in the project's specs, we utilize humble difference operators to manipulate the cameraman picture. These operators take in pixel value in relation to a previous pixel. 
 
 ![bears](https://preview.redd.it/e4rxex4f9fp51.jpg?width=512&format=pjpg&auto=webp&s=c2e9187441def9fe14c17a2620ab272219ee988a)
 
 ![bears](https://preview.redd.it/oive7l5f9fp51.jpg?width=513&format=pjpg&auto=webp&s=ad27f1de2dd93bfc11b10ce6a36e2a0eeb9b17f3)
 
-This transformation creates a border image that contains a olt of noise within its contents, therefore we must remove it. 
+This transformation creates a border image that contains a lot of noise within its contents, therefore we must remove it. 
 
 ### 1.2 Derivative of Gaussian (DoG) Filter
 
@@ -28,7 +28,7 @@ As one can see, the noise within the image is gone, and the borders become smoot
 
 ### 1.3 Image Straightening
 
-In order to straighten an image, one can utilize a derivative map to locate angles perpendicular to the axes. Therefore, once there is a count of perpendicular axes, we can deduce angles that maximize them. We must crop borders in order to process contents of the images when doing this, consequently. 
+In order to straighten an image, one can utilize a derivative map to locate angles perpendicular to the axes. Therefore, once there is a count of perpendicular axes, we can deduce angles that maximize them. We must crop borders in order to process the contents of the images when doing this, consequently. 
 
 ![bears](https://preview.redd.it/we1l1dn3efp51.jpg?width=3799&format=pjpg&auto=webp&s=c40cb9723a70f3d0d613f1032278000e272b3b2e)
 ![bears](https://preview.redd.it/p44wmbn3efp51.jpg?width=3896&format=pjpg&auto=webp&s=a4ed5782d1f68c46ddfc2ce13f79321c2371f49a)
@@ -67,7 +67,7 @@ It is apparent that the images simply only have less color, and this is due to i
 
 ### 2.2 Hybrid Images
 
-To create hybrids, we must allign pictures and add one's low frequencies with other high frequencies. 
+To create hybrids, we must align pictures and add one's low frequencies with other high frequencies. 
 
 ![bears](https://preview.redd.it/lbykg28xhfp51.jpg?width=745&format=pjpg&auto=webp&s=b1193eef0e6a3e4fcf977dea44dd2f391928d56c)
 ![bears](https://preview.redd.it/3n4v2y7xhfp51.jpg?width=640&format=pjpg&auto=webp&s=8dd965c2f40b0d9d258715d402ff64b68234a864)
@@ -76,13 +76,13 @@ To create hybrids, we must allign pictures and add one's low frequencies with ot
 
 ### 2.2 Hybrid COLOR Image
 
-Quick trial using color proved succesfule, however errored out for every other picture besides this:
+A quick trial using color proved successful, however, errored out for every other picture besides this:
 
 ![bears](https://preview.redd.it/rz28dy7xhfp51.jpg?width=745&format=pjpg&auto=webp&s=9dfaea5dd183c3938509f935b4227eebb7f8208f)
 
 ### 2.3 Gaussian and Laplacian Stacks
 
-After utilizing the Gaussian filters, we can create stacks as shown in lecture. The Gaussian stack from the first filtered image the level 6 filtered image and the Laplacian stack goes from the first Gaussian filtered image to to the difference on the bottom of the Gaussian stack images. (TOP -> BOTTTOM)
+After utilizing the Gaussian filters, we can create stacks as shown in the lecture. The Gaussian stack from the first filtered image the level 6 filtered image and the Laplacian stack go from the first Gaussian filtered image to the difference on the bottom of the Gaussian stack images. (TOP -> BOTTOM)
 
 ![bears](https://preview.redd.it/6m6q8eddjfp51.jpg?width=2340&format=pjpg&auto=webp&s=caa042b4a1de8325f65bdc2c632d7eb6e84b797b)
 ![bears](https://preview.redd.it/rhejhdddjfp51.jpg?width=2340&format=pjpg&auto=webp&s=690611e928bd96add902970806e404e94dfa6941)
@@ -94,7 +94,7 @@ After utilizing the Gaussian filters, we can create stacks as shown in lecture. 
 ![bears](https://preview.redd.it/vfek6abyjfp51.jpg?width=4470&format=pjpg&auto=webp&s=2d57a14126fd581ce17cd9229cbc72bb9f278940)
 ![bears](https://preview.redd.it/wpumt2byjfp51.jpg?width=745&format=pjpg&auto=webp&s=ec1a4d7abd0aba68a82b1e8201e5010020b2f0fb)
 
-These filters and stacks demonstrate what image is more predominalty seen through Gaussian Stacks and Laplacian stacks. 
+These filters and stacks demonstrate what image is more predominantly seen through Gaussian Stacks and Laplacian stacks. 
 
 ### 2.4 Multiresolution Blending
 
@@ -131,4 +131,4 @@ Given two images and a mask, we join these images in Laplacian levels using Low 
 
 ### Interesting Project Parts
 
-This project had various aspects that one could explore. Using our concepts of image frquencies and signals, we are able to manipulate them to create something that looks very different to the original image. Specifically, I thought Hybrid images and Multiresolution blending were the most intersting aspects because I had the msot success and coolest looking images with them. 
+This project had various aspects that one could explore. Using our concepts of image frequencies and signals, we are able to manipulate them to create something that looks very different from the original image. Specifically, I thought Hybrid images and Multiresolution blending were the most interesting aspects because I had the most success and coolest looking images with them. 
