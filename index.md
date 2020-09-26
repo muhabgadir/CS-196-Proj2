@@ -5,7 +5,7 @@ Author: Muhab Abdelgadir
  | CS 194-26
 
 
-For this project, we are intended to understand the information that is embdeded in each image. Therefore, we learn to manipulate this information in order to contort the image in some form. Overall, we utilize derivative filters, and Gaussian kernels to produce our results. 
+For this project, we are intended to understand the information that is embedded in each image. Therefore, we learn to manipulate this information in order to contort the image in some form. Overall, we utilize derivative filters, and Gaussian kernels to produce our results. 
 
 
 ### 1.1 Finite Difference Operator
